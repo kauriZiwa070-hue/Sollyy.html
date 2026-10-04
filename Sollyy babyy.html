@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>For My Ladduu Babyy 💗</title>
+
+<style>
+*{
+  box-sizing:border-box;
+  margin:0;
+  padding:0;
+  font-family: "Trebuchet MS", sans-serif;
+}
+
+body{
+  min-height:100vh;
+  background:linear-gradient(135deg,#ffd6e7,#ffeaf3,#ffc1d9);
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  padding:20px;
+  overflow-x:hidden;
+}
+
+.heart{
+  position:fixed;
+  color:#ff5c93;
+  font-size:20px;
+  animation:float 5s linear infinite;
+  opacity:.6;
+}
+
+@keyframes float{
+  0%{transform:translateY(100vh) rotate(0deg);opacity:0}
+  20%{opacity:.7}
+  100%{transform:translateY(-10vh) rotate(360deg);opacity:0}
+}
+
+.container{
+  width:100%;
+  max-width:500px;
+  background:rgba(255,255,255,.75);
+  backdrop-filter:blur(10px);
+  border-radius:30px;
+  padding:28px 22px;
+  text-align:center;
+  box-shadow:0 15px 40px rgba(180,70,110,.2);
+  position:relative;
+  z-index:2;
+}
+
+h1{
+  color:#d6336c;
+  font-size:28px;
+  margin-bottom:12px;
+}
+
+h2{
+  color:#c2255c;
+  margin-bottom:15px;
+}
+
+p{
+  color:#5c3545;
+  line-height:1.65;
+  font-size:16px;
+  margin-bottom:18px;
+}
+
+button{
+  width:100%;
+  border:none;
+  background:linear-gradient(90deg,#ff6fa3,#ff4f91);
+  color:white;
+  padding:14px;
+  margin:7px 0;
+  border-radius:18px;
+  font-size:16px;
+  font-weight:bold;
+  cursor:pointer;
+  box-shadow:0 5px 12px rgba(255,80,140,.25);
+  transition:.2s;
+}
+
+button:hover{
+  transform:scale(1.03);
+}
+
+.small{
+  font-size:13px;
+  color:#a05a75;
+}
+
+.hidden{
+  display:none;
+}
+
+.emoji{
+  font-size:48px;
+  margin-bottom:10px;
+}
+
+.final{
+  text-align:left;
+  background:#fff0f6;
+  padding:20px;
+  border-radius:22px;
+  margin-top:15px;
+}
+
+.final p{
+  font-size:15px;
+}
+
+.love{
+  text-align:center;
+  font-size:25px;
+  color:#d6336c;
+  font-weight:bold;
+}
+</style>
+</head>
+
+<body>
+
+<div class="heart" style="left:8%;animation-delay:0s;">♥</div>
+<div class="heart" style="left:25%;animation-delay:2s;">♡</div>
+<div class="heart" style="left:48%;animation-delay:1s;">♥</div>
+<div class="heart" style="left:72%;animation-delay:3s;">♡</div>
+<div class="heart" style="left:90%;animation-delay:1.5s;">♥</div>
+
+<div class="container">
+
+<!-- SCREEN 1 -->
+<div id="screen1">
+  <div class="emoji">🚨</div>
+  <h1>DUGGU EMERGENCY 🚨</h1>
+
+  <p>
+    Ladduu Babyyy, please isko open karna zaroori hai 😭💗
+    Ye koi normal message nahi hai...
+    ek chhoti si investigation hai tumhare aur mere beech hui ladai ki. 😂
+  </p>
+
+  <button onclick="show('screen2')">
+    Investigation start karo 👀
+  </button>
+
+  <p class="small">Warning: andar meri bewakoofi ke proofs mil sakte hain 😭</p>
+</div>
+
+
+<!-- SCREEN 2 -->
+<div id="screen2" class="hidden">
+  <div class="emoji">🔎</div>
+  <h2>CASE FILE: DUGGU vs ME 😭</h2>
+
+  <p>
+    Evidence ke according...
+    <br><br>
+    Ek certain Babuu apni Jaanu ke <b>achhe ke liye</b> kuch samjha raha tha...
+    <br><br>
+    Aur uski Jaanu ne kya kiya? 👀
+  </p>
+
+  <button onclick="show('screen3')">
+    Galat samajh liya 😭
+  </button>
+
+  <button onclick="show('screen3')">
+    Overthink kar liya 😭
+  </button>
+
+  <button onclick="show('screen3')">
+    Dono kar diye 🤡
+  </button>
+</div>
+
+
+<!-- SCREEN 3 -->
+<div id="screen3" class="hidden">
+  <div class="emoji">🤡</div>
+  <h2>FINAL VERDICT 👩‍⚖️</h2>
+
+  <p>
+    Court ne saare proofs check kar liye hain...
+    <br><br>
+    Aur unfortunately mere against evidence bohot strong hai. 😭
+    <br><br>
+    <b>Verdict:</b>
+    Main hi gadhi thi. 🤡
+    <br><br>
+    Tum mere achhe ke liye bol rahe the,
+    aur maine tumhari baat ka matlab galat samajh liya.
+  </p>
+
+  <button onclick="show('screen4')">
+    Aur evidence dekho 👀
+  </button>
+</div>
+
+
+<!-- SCREEN 4 -->
+<div id="screen4" class="hidden">
+  <div class="emoji">🥺</div>
+  <h2>Okay Babuu... Serious Mode ON</h2>
+
+  <p>
+    Jaanu, sach mein...
+    mujhe sorry bolna hai.
+    <br><br>
+
+    Tum mujhe samjha rahe the kyunki tumhe meri fikr thi,
+    aur instead of properly understanding what you meant,
+    maine tumhari baat ko wrong way mein le liya.
+    <br><br>
+
+    Mujhe pehle tumhari side samajhni chahiye thi.
+    Main bina properly samjhe react kar gayi,
+    aur uski wajah se hum dono ke beech fight ho gayi.
+    <br><br>
+
+    <b>I'm genuinely sorry, Ladduu Babyy. 🥺❤️</b>
+  </p>
+
+  <button onclick="show('screen5')">
+    Sorry accept karne ka form kholo 📋😂
+  </button>
+</div>
+
+
+<!-- SCREEN 5 -->
+<div id="screen5" class="hidden">
+  <div class="emoji">📋</div>
+  <h2>OFFICIAL APOLOGY FORM</h2>
+
+  <p>
+    Dear Duggu,
+    <br><br>
+    Kya aap is pagal ladki ki apology consider karenge? 🥺
+  </p>
+
+  <button onclick="response1()">
+    Hmmm... sochunga 🤨
+  </button>
+
+  <button onclick="response2()">
+    Abhi bhi gussa hoon 😤
+  </button>
+
+  <button onclick="response3()">
+    Maybe maaf kar diya 🥺
+  </button>
+
+  <div id="reply" style="margin-top:15px;font-weight:bold;color:#c2255c;"></div>
+
+  <button onclick="show('screen6')" style="margin-top:15px;">
+    Next ➜
+  </button>
+</div>
+
+
+<!-- SCREEN 6 -->
+<div id="screen6" class="hidden">
+  <div class="emoji">🎀</div>
+  <h2>Ek Last Baat...</h2>
+
+  <div class="final">
+
+    <p>
+      Mere Ladduu Babyyy, Babuu, Jaanu, Kuchupuchuuu... 🥺💗
+    </p>
+
+    <p>
+      Mujhe pata hai ki sirf ek cute sa webpage bana dene se
+      meri galti magically disappear nahi ho jayegi. 😭
+      But I really wanted to tell you properly ki
+      <b>mujhe apni galti samajh aa gayi hai.</b>
+    </p>
+
+    <p>
+      Tum mere achhe ke liye bol rahe the,
+      tumhari intention mujhe hurt karne ki nahi thi,
+      aur maine tumhe galat samajh liya.
+      I should've listened to you properly instead of
+      immediately getting upset. 🥺
+    </p>
+
+    <p>
+      I'm sorry for the fight.
+      I'm sorry for misunderstanding you.
+      Aur I'm sorry agar meri wajah se tumhe bura laga. ❤️
+    </p>
+
+    <p>
+      Aur haan...
+      meri taraf se ek official promise:
+      next time pehle tumhari baat samjhungi,
+      phir react karungi. 😭😂
+      <br><br>
+      At least try toh karungi...
+      kyunki main perfect toh bilkul nahi hoon. 🤡
+    </p>
+
+    <p>
+      Bas ab mere Kuchupuchuuu,
+      thoda sa gussa kam kar do na. 🥺👉👈
+    </p>
+
+    <p class="love">
+      I LOVE YOUUU ❤️
+    </p>
+
+    <p style="text-align:center;">
+      — Your certified overthinker & professional idiot 🤡🎀
+    </p>
+
+  </div>
+
+  <button onclick="show('screen7')">
+    One last surprise 👀💗
+  </button>
+</div>
+
+
+<!-- SCREEN 7 -->
+<div id="screen7" class="hidden">
+  <div class="emoji">💗</div>
+  <h1>Mission: Manaao Duggu 🎀</h1>
+
+  <p>
+    Agar tum yahan tak aa gaye ho...
+    toh congratulations Babuu 😭😂
+    <br><br>
+    Tum officially meri apology sun chuke ho.
+  </p>
+
+  <p>
+    Ab tumhara kaam:
+    <br>
+    😤 Gussa thoda kam karna
+    <br>
+    🥺 Mujhe thoda sa maaf karna
+    <br>
+    ❤️ Aur ek chhoti si smile dena
+  </p>
+
+  <h2>Deal? 🥺👉👈</h2>
+
+  <button onclick="celebrate()">
+    DEAL ❤️
+  </button>
+
+  <div id="celebration"></div>
+</div>
+
+</div>
+
+
+<script>
+
+function show(id){
+
+  let screens=document.querySelectorAll(".container > div");
+
+  screens.forEach(screen=>{
+    screen.classList.add("hidden");
+  });
+
+  document.getElementById(id).classList.remove("hidden");
+
+  window.scrollTo({
+    top:0,
+    behavior:"smooth"
+  });
+}
+
+function response1(){
+
+ document.getElementById("reply").innerHTML =
+ "Theek hai Jaanu 😭❤️ Main patiently wait karungi... but please zyada suspense mat dena 😂";
+}
+
+function response2(){
+
+ document.getElementById("reply").innerHTML =
+ "Fair enough Babuu 😭 You have full right to be angry. Main yahin corner mein guilty face bana ke baithi hoon 🥺";
+}
+
+function response3(){
+
+ document.getElementById("reply").innerHTML =
+ "YAYYY 😭💗 Case officially moving towards PEACE. Kuchupuchuuu wins!";
+}
+
+function celebrate(){
+
+ document.getElementById("celebration").innerHTML =
+ `
+ <div style="margin-top:20px;font-size:40px;">
+ 🎉 💗 🎀 🥹 ❤️ 🎀 💗 🎉
+ </div>
+ <p style="margin-top:15px;">
+ Mission successful... maybe. 😭😂<br><br>
+ Love youuu Ladduu Babyyy ❤️
+ </p>
+ `;
+}
+
+</script>
+
+</body>
+  </html>
